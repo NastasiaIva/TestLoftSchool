@@ -1,0 +1,60 @@
+/*---Basic styles for footer----*/
+.footer
+	position relative
+	width 100%
+	&:before
+		/*background url('../images/stick.png') no-repeat 0 0
+		background-size cover*/
+		background-color #1c667a
+		background-image linear-gradient(to right, rgba(28, 102, 122, .9) 0, rgba(246, 250, 254, .9) 0, rgba(216, 216, 216, .9) 0, rgba(242, 246, 250, .9) 0, rgba(28, 102, 122, .9) 48%, rgba(242, 246, 250, .9) 100%)
+		top 0
+		content ''
+		display block
+		height 3px
+		left 0
+		position absolute
+		right 0
+		width 100%
+		@media only screen and (max-width: 1280px)
+			background-size contain
+	&__wrapper
+		margin-left auto
+		margin-right auto
+		max-width 1024px
+		width 100%
+		line-height 77px
+		height 77px
+		vertical-align middle
+		text-align center
+		position relative
+		@media only screen and (max-width: 1024px)
+			width 95%
+		@media only screen and (max-width: 768px)
+			width 93%
+			line-height 50px
+			height 50px
+		.castle-authorization
+			top 23px
+			content ''
+			display block
+			height 32px
+			left 20px
+			position absolute
+			width 20px
+			background url('../images/castle.png') no-repeat 0 0
+			cursor pointer
+			@media only screen and (max-width: 768px)
+				top 10px
+			@media only screen and (max-width: 640px)
+				left 0
+		.footer-content
+			line-height 25px
+			display inline-block
+			vertical-align middle
+			padding 0 32px
+			@media only screen and (max-width: 768px)
+				font-size 13px
+				line-height 18px
+			@media only screen and (max-width: 480px)
+				font-size 11px
+				line-height 15px
