@@ -4,9 +4,8 @@ include page
 include scripts
 include links
 include /blocks/header/header
+include /blocks/about/about
 include /blocks/footer/footer
-include /blocks/authorization-popup/authorization-popup
-include /blocks/project-popup/project-popup
 
 doctype html
 html(lang='ru')
@@ -17,6 +16,4 @@ html(lang='ru')
 		block content
 
 		+footer()
-		+authorization-popup()
-		+project-popup()
 	+scripts(['app.min.js'])

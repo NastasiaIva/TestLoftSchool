@@ -1,18 +1,18 @@
 mixin header()
 	+b.HEADER.header
-		+e.wrapper
-			+b.header-title
-				+e.A.link(href='https://nastasiaiva.github.io/Resume/main-page.html') Nastya_Iva ❦
-			+b.UL.header-icons
-				+b.LI.social-icon
-					+e.A.inner.__vk(href="https://vk.com/justanasteziya", target="_blank")
-				+b.LI.social-icon
-					+e.A.inner.__fb(href="https://www.facebook.com/just.anasteziya", target="_blank")
-				+b.LI.social-icon
-					+e.A.inner.__github(href="https://github.com/NastasiaIva?tab=repositories", target="_blank")
-				+b.LI.social-icon
-					+e.A.inner.__instagram(href="https://www.instagram.com/igosheva/", target="_blank")
-			+b.UL.header-menu#header-menu
-				+e.LI.item
-				+e.LI.item
-				+e.LI.item
+		+e.content.container
+			+b.header__person
+				+b.header__image
+				+b.header__info
+					+b.H2.header__name Игошева Анастасия Михайловна
+					+b.A.header__link(href='mailto: just_anasteziya@mail.ru') just_anasteziya@mail.ru
+			+b.UL.header__social
+				+b.LI.header__social-item
+					+b.A.header__social-link(href="https://github.com/igosheva", target="_blank")
+						+e.IMG(src='assets/images/git.svg', alt='git')
+				+b.LI.header__social-item
+					+b.A.header__social-link(href="skype:anasteziya525", target="_blank")
+						+e.IMG(src='assets/images/sk.svg', alt='skype')
+				+b.LI.header__social-item
+					+b.A.header__social-link(href="https://vk.com", target="_blank")
+						+e.IMG(src='assets/images/vk.svg', alt='vk')

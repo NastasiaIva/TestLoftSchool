@@ -1,0 +1,11 @@
+extends /common/templates/base.jade
+
+block head
+	- var pageTitle = 'LoftSchool: личный кабинет';
+	- var pageDescription = 'Личный кабинет LoftSchool ученицы Игошевой Анастасии'
+	- var pageKeywords = 'LoftSchool, Санкт-Петербург, курсы веб-разработки, личный кабинет'
+
+block content
+	+b.main-content
+		+e.wrapper.container
+			+about()

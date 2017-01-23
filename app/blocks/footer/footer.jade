@@ -1,5 +1,6 @@
 mixin footer()
 	+b.FOOTER.footer
-		+e.wrapper
-			+b.A.castle-authorization.js-show-authorization
-			+b.SPAN.footer-content © 2016, Игошева Анастасия
+		+b.container
+			+b.P.footer__text
+				|А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,
+				|не зависимо от количества контента на странице и размера окна.

@@ -7,7 +7,8 @@ gulp.task('pictures', () => (
 		'app/blocks/**/*.png',
 		'app/pages/**/*.png',
 		'app/common/icons/**/*.png',
-		'app/common/icons/**/*.jpg'
+		'app/common/icons/**/*.jpg',
+		'app/common/icons/**/*.svg'
 	])
 		.pipe(flatten())
 		.pipe(gulp.dest('dist/assets/images'))

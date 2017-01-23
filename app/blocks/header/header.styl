@@ -1,136 +1,45 @@
 /*---Basic styles for header of main-page----*/
 .header
+	background-color #8cc34b
+	box-shadow 0 5px 5px 0 rgba(0, 0, 0, .2)
 	position relative
 	width 100%
-	&:after
-		/*background url('../images/stick.png') no-repeat 0 0
-		background-size cover*/
-		background-color #1c667a
-		background-image linear-gradient(to right, rgba(28, 102, 122, .9) 0, rgba(246, 250, 254, .9) 0, rgba(216, 216, 216, .9) 0, rgba(242, 246, 250, .9) 0, rgba(28, 102, 122, .9) 48%, rgba(242, 246, 250, .9) 100%)
-		bottom 0
-		content ''
-		display block
-		height 3px
-		left 0
-		position absolute
-		right 0
-		width 100%
-		@media only screen and (max-width: 1280px)
-			background-size contain
-	&__wrapper
+	color white
+	&__content
+		padding 15px 25px
 		display flex
-		height 119px
-		line-height 119px
-		margin-left auto
-		margin-right auto
-		max-width 1280px
-		vertical-align middle
-		width 95%
 		justify-content space-between
-		@media only screen and (max-width: 768px)
-			width 93%
-		@media only screen and (max-width: 480px)
-			height 55px
-			line-height 55px
-		.header-title
-			display inline-block
-			vertical-align middle
-			@media only screen and (max-width: 768px)
-				width 50%
-			@media only screen and (max-width: 480px)
-				width 80%
-			&__link
-				color #58697a
-				font-family 'felt_tip_womanregular', sans-serif
-				font-size 44px
-				font-weight 700
-				line-height 44px
-				text-transform uppercase
-				vertical-align middle
-				@media only screen and (max-width: 640px)
-					font-size 36px
-				@media only screen and (max-width: 480px)
-					font-size 28px
-				&:hover
-					color #3ba8c0
-		.header-icons
-			display flex
-			width auto
-			align-items center
-			min-width 200px
-			justify-content space-between
-			@media only screen and (max-width: 768px)
-				min-width 150px
-			@media only screen and (max-width: 480px)
-				display none
-		.header-menu
-			display none
-			@media only screen and (max-width: 768px)
-				display flex
-				flex-direction column
-				justify-content center
-				cursor pointer
-			&__item
-				width 25px
-				height 5px
-				background-color #58697a
-				margin-bottom 3px
-				border-radius 2px
-			&:hover, &:active, &:focus
-				.header-menu__item
-					background-color #3ba8c0
-			.menu-active
-				background-color #3ba8c0
-/*---Styles for social icons----*/
-.header-icons
-	.social-icon
+		align-items center
+	&__person
+		display flex
+		align-items center
+		flex-grow 1
+	&__image
+		max-width 60px
+		height 60px
+		background url('../images/face.jpg') no-repeat center
+		background-size cover
+		width 100%
+		border-radius 50%
+		margin-right 20px
+	&__name
+		font-size 21px
+		line-height 1.334
+		font-weight 500
+	&__link
+		font-size 14px
+		line-height 2
+		color rgba(255, 255, 255, .5)
+	&__social-item
 		display inline-block
-		float right
-		height 44px
-		margin-left 25px
-		width 44px
-		overflow hidden
-		border-radius 20%
-		box-shadow 1px 3px 5px rgba(0, 0, 0, .3), -1px -1px 5px rgba(0, 0, 0, .3)
-		&:hover
-			height 40px
-			width 40px
-		@media only screen and (max-width: 768px)
-			height 40px
-			width 40px
-			margin-left 15px
-			&:hover
-				height 36px
-				width 36px
-		@media only screen and (max-width: 640px)
-			height 34px
-			width 34px
-			margin-left 15px
-			&:hover
-				height 32px
-				width 32px
-		@media only screen and (max-width: 480px)
-			height 44px
-			width 44px
-			margin-left 25px
-			&:hover
-				height 40px
-				width 40px
+		margin-left 20px
+		vertical-align middle
 		&:first-child
 			margin-left 0
-		&__inner
+		&:hover, &:focus
+			img
+				opacity 1
+		a
 			display block
-			height inherit
-			width 100%
-		&__vk
-			background url('../images/vk_3.png') no-repeat center
-			background-size contain
-		&__fb
-			background url('../images/fb_3.png') no-repeat center
-			background-size contain
-		&__github
-			background url('../images/github_3.png') no-repeat center
-			background-size contain
-		&__instagram
-			background url('../images/instagram.png') no-repeat center
-			background-size contain
+		img
+			opacity .7
