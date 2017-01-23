@@ -2,4 +2,6 @@ mixin courses()
 	+b.SECTION.courses
 		+e.H2.title Курсы на loftblog
 		+e.H3.text которые мне помогут в выполнении этого задания
-		+e.main-block
+		+e.UL.list
+			+b.LI.courses__item
+				+b.IMG.courses__item-img(src='assets/images/js.jpg', alt='JavaScript', title='Курсы по JavaScript')
