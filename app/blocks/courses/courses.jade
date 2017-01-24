@@ -1,9 +1,9 @@
 mixin courses()
-	+b.SECTION.courses
+	+b.SECTION.courses.js-section-courses
 		+e.H2.title Курсы на loftblog
 		+e.H3.text которые мне помогут в выполнении этого задания
-		+e.UL.list
-			+b.LI.courses__item
+		+e.UL.list.js-courses-list
+			+b.LI.courses__item.js-course
 				+b.A.courses__link(href='http://loftblog.ru/material/osnovy-javascript-1-tipy-dannyx/', target='_blank')
 					+b.IMG.courses__item-img(src='assets/images/js.jpg', alt='JavaScript', title='Курсы по JavaScript')
 				+b.courses__item-info
@@ -15,13 +15,13 @@ mixin courses()
 					+b.P.courses__item-time
 						+b.I.courses__item-icon
 						+b.SPAN 24 урока (6 часов 46 минут)
-					+b.courses__checkbox-wrapper
-						+b.courses__checkbox
-							+b.INPUT(type="checkbox")
-							+b.LABEL
-								+b.SPAN
-						+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item
+				+b.courses__checkbox-wrapper
+					+b.courses__checkbox.js-checkbox
+						+b.INPUT(type="checkbox")
+						+b.LABEL
+							+b.SPAN
+					+b.SPAN.courses__checkbox-text Посмотрел
+			+b.LI.courses__item.js-course
 				+b.A.courses__link(href='http://loftblog.ru/material/git-dlya-novichkov-1-osnovy/', target='_blank')
 					+b.IMG.courses__item-img(src='assets/images/jquery.jpg', alt='JavaScript', title='Курсы по JavaScript')
 				+b.courses__item-info
@@ -33,13 +33,13 @@ mixin courses()
 					+b.P.courses__item-time
 						+b.I.courses__item-icon
 						+b.SPAN 11 уроков (2 часа 6 минут)
-					+b.courses__checkbox-wrapper
-						+b.courses__checkbox
-							+b.INPUT(type="checkbox")
-							+b.LABEL
-								+b.SPAN
-						+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item
+				+b.courses__checkbox-wrapper
+					+b.courses__checkbox.js-checkbox
+						+b.INPUT(type="checkbox")
+						+b.LABEL
+							+b.SPAN
+					+b.SPAN.courses__checkbox-text Посмотрел
+			+b.LI.courses__item.js-course
 				+b.A.courses__link(href='http://loftblog.ru/material/bazovye-elementy-stranicy-ch-1-pishem-taby/', target='_blank')
 					+b.IMG.courses__item-img(src='assets/images/base-elements.jpg', alt='JavaScript', title='Курсы по JavaScript')
 				+b.courses__item-info
@@ -51,13 +51,13 @@ mixin courses()
 					+b.P.courses__item-time
 						+b.I.courses__item-icon
 						+b.SPAN 9 уроков (2 часа 7 минут)
-					+b.courses__checkbox-wrapper
-						+b.courses__checkbox
-							+b.INPUT(type="checkbox")
-							+b.LABEL
-								+b.SPAN
-						+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item
+				+b.courses__checkbox-wrapper
+					+b.courses__checkbox.js-checkbox
+						+b.INPUT(type="checkbox")
+						+b.LABEL
+							+b.SPAN
+					+b.SPAN.courses__checkbox-text Посмотрел
+			+b.LI.courses__item.js-course
 				+b.A.courses__link(href='https://loftblog.ru/material/sozdanie-adaptivnyx-sajtov-urok-pervyj/', target='_blank')
 					+b.IMG.courses__item-img(src='assets/images/adaptive.jpg', alt='JavaScript', title='Курсы по JavaScript')
 				+b.courses__item-info
@@ -68,13 +68,13 @@ mixin courses()
 					+b.P.courses__item-time
 						+b.I.courses__item-icon
 						+b.SPAN 7 уроков (2 часа 11 минут)
-					+b.courses__checkbox-wrapper
-						+b.courses__checkbox
-							+b.INPUT(type="checkbox")
-							+b.LABEL
-								+b.SPAN
-						+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item
+				+b.courses__checkbox-wrapper
+					+b.courses__checkbox.js-checkbox
+						+b.INPUT(type="checkbox")
+						+b.LABEL
+							+b.SPAN
+					+b.SPAN.courses__checkbox-text Посмотрел
+			+b.LI.courses__item.js-course
 				+b.A.courses__link(href='https://loftblog.ru/material/css3-button-generator-1-bootstrap-html5boilerplate-initializr/', target='_blank')
 					+b.IMG.courses__item-img(src='assets/images/button.jpg', alt='JavaScript', title='Курсы по JavaScript')
 				+b.courses__item-info
@@ -86,13 +86,13 @@ mixin courses()
 					+b.P.courses__item-time
 						+b.I.courses__item-icon
 						+b.SPAN 6 уроков (1 час 9 минут)
-					+b.courses__checkbox-wrapper
-						+b.courses__checkbox
-							+b.INPUT(type="checkbox")
-							+b.LABEL
-								+b.SPAN
-						+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item
+				+b.courses__checkbox-wrapper
+					+b.courses__checkbox.js-checkbox
+						+b.INPUT(type="checkbox")
+						+b.LABEL
+							+b.SPAN
+					+b.SPAN.courses__checkbox-text Посмотрел
+			+b.LI.courses__item.js-course
 				+b.A.courses__link(href='https://loftblog.ru/material/verstka-adaptivnoj-css-galerei/', target='_blank')
 					+b.IMG.courses__item-img(src='assets/images/css-galery.jpg', alt='JavaScript', title='Курсы по JavaScript')
 				+b.courses__item-info
@@ -103,9 +103,10 @@ mixin courses()
 					+b.P.courses__item-time
 						+b.I.courses__item-icon
 						+b.SPAN 4 урока (50 минут)
-					+b.courses__checkbox-wrapper
-						+b.courses__checkbox
-							+b.INPUT(type="checkbox")
-							+b.LABEL
-								+b.SPAN
-						+b.SPAN.courses__checkbox-text Посмотрел
+				+b.courses__checkbox-wrapper
+					+b.courses__checkbox.js-checkbox
+						+b.INPUT(type="checkbox")
+						+b.LABEL
+							+b.SPAN
+					+b.SPAN.courses__checkbox-text Посмотрел
+	+b.P.last-text.js-last-text Задание выполнено

@@ -19,6 +19,7 @@
 		margin-right 20px
 		align-self flex-start
 		margin-bottom 23px
+		position relative
 		&:hover
 			.courses__link:after
 				content ''
@@ -26,6 +27,17 @@
 				color #8cc34b
 		&:nth-child(3n)
 			margin-right 0
+		&.active
+			.courses__checkbox-wrapper
+				transform background-color 1s
+				background-color #e5efd7
+				label span
+					background-color #8cc34b
+					border none
+					&:after
+						content ''
+			.courses__checkbox-text
+				color #8cc34b
 	&__link
 		display block
 		position relative
@@ -50,7 +62,7 @@
 		margin-bottom 10px
 		font-weight 300
 	&__item-time
-		margin-bottom 32px
+		margin-bottom 4px
 		font-family 'FontAwesome', sans-serif
 		color #b6b6b6
 		span
@@ -85,6 +97,8 @@
 			transform-origin 0 0
 	&__checkbox-wrapper
 		display flex
+		background-color #f6f7f2
+		padding 14px 20px
 	&__checkbox
 		display inline-block
 		position relative
@@ -132,3 +146,5 @@
 	&__checkbox-text
 		font-size 18px
 		line-height 1.334
+.last-text
+	display none
