@@ -2,37 +2,35 @@ import $ from 'jquery';
 
 $(function () {
 
-	bind();
+	function bind() {
 
-	function bind () {
-
-		$('.js-checkbox').on('click', function(event){
-
-			var coursesItem = $(this).parents('.js-course'),
-				coursesList = $(this).parents('.js-courses-list');
+		$('.js-checkbox').on('click', function (event) {
+			var
+				_this = $(this),
+				coursesItem = _this.parents('.js-course'),
+				coursesSection = _this.parents('.js-section-courses'),
+				lastText = coursesSection.siblings('.js-last-text');
 
 			event.preventDefault();
-			coursesItem.stop().animate({backgroundColor: '#edf5e3'}, {
-				duration: 1000,
-				queue:false,
-				complete: function () {
-					coursesItem.addClass('active').slideUp('1000');
-				}
-			});
-			coursesItem.stop().animate({display: 'none'}, {
-				duration: 100,
-				queue:true,
-				complete: function () {
-					coursesItem.remove();
-				}
-			});
 
-			if (coursesList.length === 0) {
-				$('.js-section-courses').css('display', 'none');
-				$('.js-last-text').css('display', 'block');
-			} else {
-			}
+			coursesItem
+				.addClass('active')
+				.animate({backgroundColor: '#edf5e3'}, 1000, "linear",
+					function() {
 
+						if (coursesItem.siblings().length) {
+
+							coursesItem.slideUp('1000').remove();
+
+						}else {
+							coursesSection.remove();
+							lastText.css('display', 'block');
+
+						}
+					}
+			);
 		});
 	}
+
+	bind();
 });

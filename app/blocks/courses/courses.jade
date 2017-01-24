@@ -1,112 +1,103 @@
 mixin courses()
-	+b.SECTION.courses.js-section-courses
-		+e.H2.title Курсы на loftblog
-		+e.H3.text которые мне помогут в выполнении этого задания
-		+e.UL.list.js-courses-list
-			+b.LI.courses__item.js-course
-				+b.A.courses__link(href='http://loftblog.ru/material/osnovy-javascript-1-tipy-dannyx/', target='_blank')
-					+b.IMG.courses__item-img(src='assets/images/js.jpg', alt='JavaScript', title='Курсы по JavaScript')
-				+b.courses__item-info
-					+b.A.courses__info-link(href='http://loftblog.ru/material/osnovy-javascript-1-tipy-dannyx/', target='_blank')
-						+b.H3 Основы JavaScript
-					+b.P.courses__item-text
-						|Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот
-						|курс вы познаете этот прекрасный язык от самых основ.
-					+b.P.courses__item-time
-						+b.I.courses__item-icon
-						+b.SPAN 24 урока (6 часов 46 минут)
-				+b.courses__checkbox-wrapper
-					+b.courses__checkbox.js-checkbox
-						+b.INPUT(type="checkbox")
-						+b.LABEL
-							+b.SPAN
-					+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item.js-course
-				+b.A.courses__link(href='http://loftblog.ru/material/git-dlya-novichkov-1-osnovy/', target='_blank')
-					+b.IMG.courses__item-img(src='assets/images/jquery.jpg', alt='JavaScript', title='Курсы по JavaScript')
-				+b.courses__item-info
-					+b.A.courses__info-link(href='http://loftblog.ru/material/git-dlya-novichkov-1-osnovy/', target='_blank')
-						+b.H3 Основы JQUERY
-					+b.P.courses__item-text
-						| Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот
-						| курс вы познаете этот прекрасный язык от самых основ.
-					+b.P.courses__item-time
-						+b.I.courses__item-icon
-						+b.SPAN 11 уроков (2 часа 6 минут)
-				+b.courses__checkbox-wrapper
-					+b.courses__checkbox.js-checkbox
-						+b.INPUT(type="checkbox")
-						+b.LABEL
-							+b.SPAN
-					+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item.js-course
-				+b.A.courses__link(href='http://loftblog.ru/material/bazovye-elementy-stranicy-ch-1-pishem-taby/', target='_blank')
-					+b.IMG.courses__item-img(src='assets/images/base-elements.jpg', alt='JavaScript', title='Курсы по JavaScript')
-				+b.courses__item-info
-					+b.A.courses__info-link(href='http://loftblog.ru/material/bazovye-elementy-stranicy-ch-1-pishem-taby/', target='_blank')
-						+b.H3 Базовые элементы страницы
-					+b.P.courses__item-text
-						|Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот
-						|курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
-					+b.P.courses__item-time
-						+b.I.courses__item-icon
-						+b.SPAN 9 уроков (2 часа 7 минут)
-				+b.courses__checkbox-wrapper
-					+b.courses__checkbox.js-checkbox
-						+b.INPUT(type="checkbox")
-						+b.LABEL
-							+b.SPAN
-					+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item.js-course
-				+b.A.courses__link(href='https://loftblog.ru/material/sozdanie-adaptivnyx-sajtov-urok-pervyj/', target='_blank')
-					+b.IMG.courses__item-img(src='assets/images/adaptive.jpg', alt='JavaScript', title='Курсы по JavaScript')
-				+b.courses__item-info
-					+b.A.courses__info-link(href='https://loftblog.ru/material/sozdanie-adaptivnyx-sajtov-urok-pervyj/', target='_blank')
-						+b.H3 Создание адаптивных сайтов
-					+b.P.courses__item-text
-						|В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.
-					+b.P.courses__item-time
-						+b.I.courses__item-icon
-						+b.SPAN 7 уроков (2 часа 11 минут)
-				+b.courses__checkbox-wrapper
-					+b.courses__checkbox.js-checkbox
-						+b.INPUT(type="checkbox")
-						+b.LABEL
-							+b.SPAN
-					+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item.js-course
-				+b.A.courses__link(href='https://loftblog.ru/material/css3-button-generator-1-bootstrap-html5boilerplate-initializr/', target='_blank')
-					+b.IMG.courses__item-img(src='assets/images/button.jpg', alt='JavaScript', title='Курсы по JavaScript')
-				+b.courses__item-info
-					+b.A.courses__info-link(href='https://loftblog.ru/material/css3-button-generator-1-bootstrap-html5boilerplate-initializr/', target='_blank')
-						+b.H3 Верстка адаптивной css галереи
-					+b.P.courses__item-text
-						|В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые
-						|помогут вам решать поставленные задачи более быстро и эффективно.
-					+b.P.courses__item-time
-						+b.I.courses__item-icon
-						+b.SPAN 6 уроков (1 час 9 минут)
-				+b.courses__checkbox-wrapper
-					+b.courses__checkbox.js-checkbox
-						+b.INPUT(type="checkbox")
-						+b.LABEL
-							+b.SPAN
-					+b.SPAN.courses__checkbox-text Посмотрел
-			+b.LI.courses__item.js-course
-				+b.A.courses__link(href='https://loftblog.ru/material/verstka-adaptivnoj-css-galerei/', target='_blank')
-					+b.IMG.courses__item-img(src='assets/images/css-galery.jpg', alt='JavaScript', title='Курсы по JavaScript')
-				+b.courses__item-info
-					+b.A.courses__info-link(href='https://loftblog.ru/material/verstka-adaptivnoj-css-galerei/', target='_blank')
-						+b.H3 Верстка адаптивной css галереи
-					+b.P.courses__item-text
-						|В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.
-					+b.P.courses__item-time
-						+b.I.courses__item-icon
-						+b.SPAN 4 урока (50 минут)
-				+b.courses__checkbox-wrapper
-					+b.courses__checkbox.js-checkbox
-						+b.INPUT(type="checkbox")
-						+b.LABEL
-							+b.SPAN
-					+b.SPAN.courses__checkbox-text Посмотрел
-	+b.P.last-text.js-last-text Задание выполнено
+	+b.SECTION.courses
+		+b.courses__wrapper.container
+			+b.courses__content.js-section-courses
+				+b.H2.courses__title Курсы на loftblog
+				+b.H3.courses__text которые мне помогут в выполнении этого задания
+				+b.UL.courses__list.js-courses-list
+					+b.LI.courses__item.js-course
+						+b.A.courses__link(href='http://loftblog.ru/material/osnovy-javascript-1-tipy-dannyx/', target='_blank')
+							+b.IMG.courses__item-img(src='assets/images/js.jpg', alt='JavaScript', title='Курсы по JavaScript')
+						+b.courses__item-info
+							+b.A.courses__info-link(href='http://loftblog.ru/material/osnovy-javascript-1-tipy-dannyx/', target='_blank')
+								+b.H3 Основы JavaScript
+							+b.P.courses__item-text
+								|Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот
+								|курс вы познаете этот прекрасный язык от самых основ.
+							+b.P.courses__item-time  24 урока (6 часов 46 минут)
+						+b.courses__checkbox-wrapper
+							+b.courses__checkbox.js-checkbox
+								+b.INPUT.courses__checkbox-input(type="checkbox")
+								+b.LABEL.courses__checkbox-label
+									+b.SPAN.courses__checkbox-mark
+							+b.P.courses__checkbox-text Посмотрел
+					+b.LI.courses__item.js-course
+						+b.A.courses__link(href='http://loftblog.ru/material/git-dlya-novichkov-1-osnovy/', target='_blank')
+							+b.IMG.courses__item-img(src='assets/images/jquery.jpg', alt='JavaScript', title='Курсы по JavaScript')
+						+b.courses__item-info
+							+b.A.courses__info-link(href='http://loftblog.ru/material/git-dlya-novichkov-1-osnovy/', target='_blank')
+								+b.H3 Основы JQUERY
+							+b.P.courses__item-text
+								| Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот
+								| курс вы познаете этот прекрасный язык от самых основ.
+							+b.P.courses__item-time  11 уроков (2 часа 6 минут)
+						+b.courses__checkbox-wrapper
+							+b.courses__checkbox.js-checkbox
+								+b.INPUT.courses__checkbox-input(type="checkbox")
+								+b.LABEL.courses__checkbox-label
+									+b.SPAN.courses__checkbox-mark
+							+b.P.courses__checkbox-text Посмотрел
+					+b.LI.courses__item.js-course
+						+b.A.courses__link(href='http://loftblog.ru/material/bazovye-elementy-stranicy-ch-1-pishem-taby/', target='_blank')
+							+b.IMG.courses__item-img(src='assets/images/base-elements.jpg', alt='JavaScript', title='Курсы по JavaScript')
+						+b.courses__item-info
+							+b.A.courses__info-link(href='http://loftblog.ru/material/bazovye-elementy-stranicy-ch-1-pishem-taby/', target='_blank')
+								+b.H3 Базовые элементы страницы
+							+b.P.courses__item-text
+								|Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот
+								|курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
+							+b.P.courses__item-time  9 уроков (2 часа 7 минут)
+						+b.courses__checkbox-wrapper
+							+b.courses__checkbox.js-checkbox
+								+b.INPUT.courses__checkbox-input(type="checkbox")
+								+b.LABEL.courses__checkbox-label
+									+b.SPAN.courses__checkbox-mark
+							+b.P.courses__checkbox-text Посмотрел
+					+b.LI.courses__item.js-course
+						+b.A.courses__link(href='https://loftblog.ru/material/sozdanie-adaptivnyx-sajtov-urok-pervyj/', target='_blank')
+							+b.IMG.courses__item-img(src='assets/images/adaptive.jpg', alt='JavaScript', title='Курсы по JavaScript')
+						+b.courses__item-info
+							+b.A.courses__info-link(href='https://loftblog.ru/material/sozdanie-adaptivnyx-sajtov-urok-pervyj/', target='_blank')
+								+b.H3 Создание адаптивных сайтов
+							+b.P.courses__item-text
+								|В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.
+							+b.P.courses__item-time  7 уроков (2 часа 11 минут)
+						+b.courses__checkbox-wrapper
+							+b.courses__checkbox.js-checkbox
+								+b.INPUT.courses__checkbox-input(type="checkbox")
+								+b.LABEL.courses__checkbox-label
+									+b.SPAN.courses__checkbox-mark
+							+b.P.courses__checkbox-text Посмотрел
+					+b.LI.courses__item.js-course
+						+b.A.courses__link(href='https://loftblog.ru/material/css3-button-generator-1-bootstrap-html5boilerplate-initializr/', target='_blank')
+							+b.IMG.courses__item-img(src='assets/images/button.jpg', alt='JavaScript', title='Курсы по JavaScript')
+						+b.courses__item-info
+							+b.A.courses__info-link(href='https://loftblog.ru/material/css3-button-generator-1-bootstrap-html5boilerplate-initializr/', target='_blank')
+								+b.H3 Верстка адаптивной css галереи
+							+b.P.courses__item-text
+								|В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые
+								|помогут вам решать поставленные задачи более быстро и эффективно.
+							+b.P.courses__item-time  6 уроков (1 час 9 минут)
+						+b.courses__checkbox-wrapper
+							+b.courses__checkbox.js-checkbox
+								+b.INPUT.courses__checkbox-input(type="checkbox")
+								+b.LABEL.courses__checkbox-label
+									+b.SPAN.courses__checkbox-mark
+							+b.P.courses__checkbox-text Посмотрел
+					+b.LI.courses__item.js-course
+						+b.A.courses__link(href='https://loftblog.ru/material/verstka-adaptivnoj-css-galerei/', target='_blank')
+							+b.IMG.courses__item-img(src='assets/images/css-galery.jpg', alt='JavaScript', title='Курсы по JavaScript')
+						+b.courses__item-info
+							+b.A.courses__info-link(href='https://loftblog.ru/material/verstka-adaptivnoj-css-galerei/', target='_blank')
+								+b.H3 Верстка адаптивной css галереи
+							+b.P.courses__item-text
+								|В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.
+							+b.P.courses__item-time  4 урока (50 минут)
+						+b.courses__checkbox-wrapper
+							+b.courses__checkbox.js-checkbox
+								+b.INPUT.courses__checkbox-input(type="checkbox")
+								+b.LABEL.courses__checkbox-label
+									+b.SPAN.courses__checkbox-mark
+							+b.P.courses__checkbox-text Посмотрел
+			+b.P.courses__succes.js-last-text
+				+b.SPAN.courses__succes-text Задание выполнено

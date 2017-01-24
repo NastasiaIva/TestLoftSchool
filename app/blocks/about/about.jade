@@ -1,24 +1,25 @@
 mixin about()
 	+b.SECTION.about
-		+e.H1.title О будущем ученике
-		+e.H3.text Ребятам из Loftschool будет полезно узнать немного обо мне
-		+e.main-block
-			+b.about__main-item
-				+b.IMG.about__main-img(src='assets/images/hello.svg', alt='hello')
-				+b.about__main-info
-					+b.H3.about__main-title Немного обо мне
-					+b.P.about__main-text
-						|Я родом из Сибири(г.Кемерово), сейчас живу в Санкт-Петербурге (Россия). Мне 23 года. Высшее
-						|образование - закончила Томский университет систем управления и радиоэлектронники по
-						|специальности "Управление инновациями". Опыт в разработке 1 год.
-						|С моим портфолио можно ознакомиться по ссылке
-						+b.A.about__main-link(href='https://igosheva.github.io/MyPortfolio/', target='_blank') https://igosheva.github.io/MyPortfolio/
-			+b.about__main-item
-				+b.IMG.about__main-img(src='assets/images/experience.svg', alt='experience')
-				+b.about__main-info
-					+b.H3.about__main-title Мой опыт в разработке
-					+b.P.about__main-text
-						|Прошла бесплатные курсы HTML-Academy. Около года работала в веб-студии (г.Томск) на позиции
-						|верстальщика, повсеместно вела проекты как менеджер. На данный момент пользуюсь следующими
-						|технологиями: html5, css3, sass, slyles, jade, git, jquery, gulp, а также активно изучаю
-						|React.js и углубляю свои знания в JavaScript.
+		+b.about__wrapper.container
+			+b.H1.about__title О будущем ученике
+			+b.H3.about__text Ребятам из Loftschool будет полезно узнать немного обо мне
+			+b.about__main-block
+				+b.about__main-item
+					+b.IMG.about__main-img(src='assets/images/hello.svg', alt='hello')
+					+b.about__main-info
+						+b.H3.about__main-title Немного обо мне
+						+b.P.about__main-text
+							|Я родом из Сибири(г.Кемерово), сейчас живу в Санкт-Петербурге (Россия). Мне 23 года. Высшее
+							|образование - закончила Томский университет систем управления и радиоэлектронники по
+							|специальности "Управление инновациями". Опыт в разработке 1 год.
+							|С моим портфолио можно ознакомиться по ссылке
+							+b.A.about__main-link(href='https://igosheva.github.io/MyPortfolio/', target='_blank') https://igosheva.github.io/MyPortfolio/
+				+b.about__main-item
+					+b.IMG.about__main-img(src='assets/images/experience.svg', alt='experience')
+					+b.about__main-info
+						+b.H3.about__main-title Мой опыт в разработке
+						+b.P.about__main-text
+							|Прошла бесплатные курсы HTML-Academy. Около года работала в веб-студии (г.Томск) на позиции
+							|верстальщика, повсеместно вела проекты как менеджер. На данный момент пользуюсь следующими
+							|технологиями: html5, css3, sass, slyles, jade, git, jquery, gulp, а также активно изучаю
+							|React.js и углубляю свои знания в JavaScript.
